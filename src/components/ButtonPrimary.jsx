@@ -5,7 +5,7 @@ export default function ButtonPrimary({caption, theme, onClick, error}) {
   const className = `button-primary ${error ? 'error' : ''}`;
 
   return (
-    <button className={className} onClick={onClick} role="button">
+    <button className={className} onClick={onClick} type="button">
       {caption}
     </button>
   );
