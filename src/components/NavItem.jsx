@@ -14,7 +14,8 @@ export default function NavItem({ label, theme, iconSrc, toggle=false, setTheme,
   };
 
   return (
-    <div
+    <button
+      type="button"
       className={`nav-item ${theme} ${toggle ? 'has-toggle' : ''}`}
       onClick={isInteractive ? onClick : undefined}
       
@@ -27,6 +28,6 @@ export default function NavItem({ label, theme, iconSrc, toggle=false, setTheme,
       <span className='toggle' onClick={(event) => event.stopPropagation()}>
           {toggle && <ToggleButton theme={theme} setTheme={setTheme} onToggle={onToggle} />}
       </span>
-    </div>
+    </button>
   );
 }
