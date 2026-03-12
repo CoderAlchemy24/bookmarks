@@ -36,6 +36,7 @@ function App() {
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
       return prefersDark ? 'dark' : 'light'
     } catch (e) {
+      console.log('Could not determine theme, defaulting to light:', e)
       return 'light'
     }
   })
@@ -44,7 +45,7 @@ function App() {
     try {
       document.documentElement.classList.toggle('dark', theme === 'dark')
       localStorage.setItem('theme', theme)
-    } catch (e) {}
+    } catch (e) { console.log('Could not apply theme:', e) }
   }, [theme])
 
   useEffect(() => {
