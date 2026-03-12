@@ -1,0 +1,72 @@
+.toggle-button {
+    width: 78px;
+    height: 40px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-radius: var(--spacing-100);
+    cursor: pointer;
+    padding: 2px;
+    background: transparent;
+    appearance: none;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.toggle-button.light {
+    border: 1px solid var(--neutral-800);
+    background-color: var(--neutral-400);
+}
+
+.toggle-button.dark {
+    border: 1px solid var(--neutral-100);
+    background-color: var(--neutral-700);
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc((100% - 4px) / 2);
+    height: calc(100% - 4px);
+    border-radius: var(--spacing-100);
+    transition: transform 220ms ease;
+    z-index: 1;
+}
+
+.toggle-button.light .toggle-slider {
+    background-color: var(--neutral-0);
+    transform: translateX(0);
+}
+
+.toggle-button.dark .toggle-slider {
+    background-color: var(--teal-700);
+    transform: translateX(100%);
+}
+
+.toggle-button.light.anim-to-dark .toggle-slider {
+    transform: translateX(100%);
+}
+
+.toggle-button.dark.anim-to-light .toggle-slider {
+    transform: translateX(0);
+}
+
+.toggle-icon {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.toggle-icon > img {
+    padding: 4px var(--spacing-100);
+}
+
+

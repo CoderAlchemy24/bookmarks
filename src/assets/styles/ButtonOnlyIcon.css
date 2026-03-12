@@ -1,0 +1,41 @@
+.plus-icon{
+    width:48px;
+    height:48px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+   
+}
+
+.plus-icon.light{
+     background-color: var(--teal-800);
+    color: var(--neutral-900);
+}
+.plus-icon.dark{
+    background-color: var(--teal-800);
+    color: var(--neutral-100);}
+
+.plus-icon > img{
+    width: 20px;
+    height: 20px;
+    max-width: 28px;
+    max-height: 28px;
+    object-fit: contain;
+}
+
+@media screen and (min-width:900px) {
+    .plus-icon{
+        display: none;
+    }
+    
+}
+
+@media  screen and (max-width: 899px) {
+    .plus-icon{
+        display: flex;
+    }   
+    
+}

@@ -1,0 +1,203 @@
+.text-area-field {
+  width: 320px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+ 
+   
+}
+
+.text-area-field {
+  background-color: var(--neutral-800);
+  color: var(--neutral-100);
+}
+
+.text-area-field.light{
+  background-color: var(--neutral-0);
+  color: var(--neutral-800);
+}
+
+.textarea-label{
+   font-family: var(--text-preset-4);
+    font-weight: var(--text-preset-4-weight);
+    font-size:  var(--text-preset-4-size);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+
+}
+
+
+
+
+.textarea-wrapper {
+    position: relative;
+    display: block;
+    width:100%;
+
+    font-family: var(--text-preset-4-medium);
+    font-weight: var(--text-preset-4-medium-weight);
+    font-size:  var(--text-preset-4-medium-size);
+    line-height: var(--text-preset-4-medium-line-height);
+    letter-spacing: var(--text-preset-4-medium-letter-spacing);
+}
+
+.textarea-input{
+  margin:0;
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing-100);
+  border-radius: var(--spacing-150);
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 32px; /* legalább icon width + left offset */
+   
+    min-height: 80px;
+  
+  font-family: var(--text-preset-4-medium);
+  font-weight: var(--text-preset-4-medium-weight);
+  font-size:  var(--text-preset-4-medium-size);
+  line-height: var(--text-preset-4-medium-line-height);
+  letter-spacing: var(--text-preset-4-medium-letter-spacing);   
+}
+
+
+.textarea-icon {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    opacity: 0.9;
+    
+}
+
+
+
+.bottom-texts{
+  width:100%; 
+}
+
+.hint-and-counter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:98%;
+}
+
+.hint-and-counter p{
+  
+  font-family: var(--text-preset-4-medium);
+  font-weight: var(--text-preset-4-medium-weight);
+  font-size:  var(--text-preset-4-medium-size);
+  line-height: var(--text-preset-4-medium-line-height);
+  letter-spacing: var(--text-preset-4-medium-letter-spacing);
+}
+
+
+
+
+
+/* Colors for dark and light themes */
+
+/* default*/
+
+.textarea-label.black{
+  background-color: var(--neutral-800);
+  color: var(--neutral-100);
+  
+}
+
+.textarea-label.light{
+  color: var(--neutral-600);
+  background-color: var(--neutral-0);
+}
+
+
+.textarea-input.dark{
+  background-color: var(--neutral-800);
+  color: var(--neutral-100);
+ 
+  border: 1px solid var(--neutral-300);
+}
+.textarea-input.light{
+  background-color: var(--neutral-0);
+  color: var(--neutral-800);
+  border: 1px solid var(--neutral-500);   
+}
+
+.hint-and-counter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: auto;
+  width:100%;
+}
+
+.hint-and-counter > p.dark{
+  color: var(--neutral-100);
+  background-color: var(--neutral-800);
+}
+
+
+.hint-and-counter > p.light{
+  
+  color: var(--neutral-800);
+  background-color: var(--neutral-0);
+ 
+}
+
+/* Hover */
+
+
+.textarea-input.dark:hover{
+  background-color: var(--neutral-500);
+  color: var(--neutral-100);
+ 
+  border: 1px solid var(--neutral-400);
+}
+.textarea-input.light:hover{
+  background-color: var(--neutral-100);
+  color: var(--neutral-800);
+  border: 1px solid var(--neutral-500);   
+}
+
+
+/* Focus */
+
+
+.textarea-input.dark:focus-visible{
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+  outline: 3px double var(--neutral-400);
+  border: 1px solid var(--neutral-400);
+ 
+
+}
+.textarea-input.light:focus-visible{
+  background-color: var(--neutral-0);
+  color: var(--neutral-800);
+  outline: 3px double var(--neutral-500);
+  border: 1px solid var(--neutral-500);   
+ 
+}
+
+/* Error */
+
+
+.text-area-input.error{
+  color:red;
+  outline: 2px solid var(--red-600);
+  border: 1px solid var(--red-800);
+
+}
+
+

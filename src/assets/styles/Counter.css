@@ -1,0 +1,31 @@
+.counter{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    border-radius: 50%;
+    font-family: var(--text-preset-5-family);
+    font-weight: var(--text-preset-5-weight);
+    font-size: var(--text-preset-5-size);
+    line-height: var(--text-preset-5-line-height);
+    letter-spacing: var(--text-preset-5-letter-spacing);
+    padding: 4px;
+    position: relative;
+    top: 4px;
+    right:4px;
+}
+
+.counter.light{
+    background-color: var(--neutral-100);
+    color: var(--neutral-900);
+    border: 1px solid var(--neutral-300);
+}
+
+.counter.dark{
+    background-color: var(--neutral-900);
+    color: var(--neutral-100);
+    border: 1px solid var(--neutral-300);
+}

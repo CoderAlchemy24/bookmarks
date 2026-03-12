@@ -1,0 +1,136 @@
+
+.dialog-archive,
+.dialog-unarchive,
+.dialog-delete{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: auto;
+    border-radius: var(--spacing-100);
+    margin: 0; /* positioning handled by fixed placement */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.x-icon{
+    position:absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.x-icon:hover{
+    cursor: pointer;
+}
+
+.dialog-content{
+     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.dialog-content h2{
+  font-family: var(--text-preset-1);
+  font-weight: var(--text-preset-1-weight);
+  font-size:  var(--text-preset-1-size);
+  line-height: var(--text-preset-1-line-height);
+  letter-spacing: var(--text-preset-1-letter-spacing);
+}
+
+.dialog-content p{
+  font-family: var(--text-preset-4-medium);
+  font-weight: var(--text-preset-4-medium-weight);
+  font-size:  var(--text-preset-4-medium-size);
+  line-height: var(--text-preset-4-medium-line-height);
+  letter-spacing: var(--text-preset-4-medium-letter-spacing);
+  padding-bottom: 12px ;
+}
+
+.dialog-content.dark{
+    background-color: var(--neutral-800);
+    border: 1px solid var(--neutral-400);}
+
+.dialog-content.light{
+    background-color: var(--neutral-0);
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--spacing-100);
+}
+
+.dialog-content h2.dark{
+
+    color: var(--neutral-0)
+}
+
+.dialog-content p.dark{
+
+    color: var(--neutral-100)
+}
+
+.dialog-content h2.light{
+
+    color: var(--neutral-900);
+    text-align: left;;
+}
+
+.dialog-content p.light{
+
+    color: var(--neutral-800);
+        text-align: left;;
+
+}
+
+.dialog-content .btns{
+    justify-self: flex-end;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;   
+    padding: 32px 32px 8px 0;
+}
+
+/* hide dialogs by default; show when `.open` is present */
+.dialog-archive,
+.dialog-unarchive,
+.dialog-delete{
+    display: none;
+}
+.dialog-archive.open,
+.dialog-unarchive.open,
+.dialog-delete.open{
+    display: block;
+}
+
+/* ensure archive sits above unarchive if both are open */
+.dialog-unarchive.open{
+    z-index: 5;
+}
+.dialog-archive.open{
+    z-index: 10;
+}
+
+.dialog-delete.open{
+    z-index:15;
+}
+
+
+.delete-button{
+    width: max-content;
+    background-color: var(--red-800);
+    color: var(--neutral-0);
+    border: none;
+    border-radius: var(--spacing-100);
+    padding: 12px 16px;
+    font-family: var(--text-preset-3-family);
+  font-weight: var(--text-preset-3);
+  font-size:  var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line-height);
+  letter-spacing: var(--text-preset-3-letter-spacing); 
+}
+
+.delete-button:hover{
+    background-color: var(--red-600);
+    cursor: pointer;
+}

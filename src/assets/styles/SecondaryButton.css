@@ -1,0 +1,73 @@
+button {
+    width:163px;
+    height: auto;
+    padding: 12px 10px;
+    border-radius: var(--spacing-100);
+    border:none;
+    font-family: var(--text-preset-3-family);
+  font-weight: var(--text-preset-3);
+  font-size:  var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line-height);
+  letter-spacing: var(--text-preset-3-letter-spacing);  
+  margin:2px;
+
+}
+
+.button-secondary.light {
+    background-color: var(--neutral-100);
+    color: var(--neutral-900);
+    border: none;
+} 
+
+.button-secondary.light:hover {
+    background-color: var(--neutral-0);
+    color: var(--neutral-900);
+    border: 1px solid var(--neutral-400);
+} 
+
+.button-secondary.light:focus-visible {
+    background-color: var(--neutral-0);
+    color: var(--neutral-900);
+    outline: 3px solid var(--neutral-800);
+    border: 1px solid var(--neutral-100);
+} 
+
+.button-secondary.light:active {
+    background-color: var(--neutral-0);
+    color: var(--teal-800);
+    border: 1px solid var(--teal-800);
+} 
+
+.button-secondary.dark {
+    background-color: var(--neutral-800);
+    color: var(--neutral-0);
+    border: 1px solid var(--neutral-400);
+} 
+
+.button-secondary.dark:hover {
+    background-color: var(--neutral-500);
+    color: var(--neutral-0);
+    border: 1px solid var(--neutral-600);
+} 
+
+.button-secondary.dark:focus-visible {
+    background-color: var(--neutral-800);
+    color: var(--neutral-0);
+    outline: 3px solid var(--neutral-500);
+    border: 1px solid var(--neutral-100);
+} 
+
+.button-secondary.dark:active {
+    background-color: var(--neutral-800);
+    color: var(--teal-0);
+    border: 1px solid var(--teal-800);
+} 
+
+
+
+@media screen and (min-width: 601px) {
+    button {
+        width: 171px;
+        
+    }
+}

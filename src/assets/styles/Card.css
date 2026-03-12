@@ -1,0 +1,182 @@
+.card{
+    width: min(100%, 338px);
+    height:290px;
+    padding:16px;
+    border-radius: 10px;
+    position: relative;
+    flex: 0 1 338px;
+}
+
+.card.light{
+    background-color: var(--neutral-0);
+    color: var(--neutral-800);
+    border: 1px solid var(--neutral-400);
+}
+
+.card.dark{
+    background-color: var(--neutral-800);
+    color: var(--neutral-100);
+    border: 1px solid var(--neutral-400);
+}
+
+.card-header{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:12px;
+    padding-bottom:16px;
+    border-bottom: 1px solid var(--neutral-400);
+}
+
+
+.card-header{
+    position: relative;
+}
+
+.card-header .card-favicon
+{
+    width:45px;
+    height:45px;
+}
+
+.card-header .card-menu-icon{
+    width:28px;
+    height:28px;
+}
+
+
+
+.card-header .card-menu-icon:hover{
+    cursor: pointer;
+}
+
+/* Ensure menu icon stays above the dropdown so it remains clickable */
+.card-header .card-menu-icon{
+    position: relative;
+    z-index: 10;
+}
+
+
+.card-header .card-header-texts{
+    width:100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:4px;
+}
+
+.card-title{
+    font-family: var(--text-preset-2-family);
+  font-weight: var(--text-preset-2-weight);
+  font-size:  var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+
+}
+
+.card-url{
+  font-family: var(--text-preset-5-family);
+  font-weight: var(--text-preset-5-weight);
+  font-size:  var(--text-preset-5-size);
+  line-height: var(--text-preset-5-line-height);
+  letter-spacing: var(--text-preset-5-letter-spacing);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.card .card-description{
+    width:100%;
+    height: 100px;
+   font-family:  var(--text-preset-4-medium-family);
+  font-weight:   var(--text-preset-4-medium-weight);
+  font-size:     var(--text-preset-4-medium-size);
+  line-height:   var(--text-preset-4-medium-line-height);
+  letter-spacing:var(--text-preset-4-medium-letter-spacing);
+  padding:16px 16px 0px 0px;
+    
+}
+.card .card-tags{
+    width:100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:6px;
+    padding:16px 16px 16px 0px;
+}
+.card .card-tags .card-tag{
+   font-family:  var(--text-preset-4-medium-family);
+  font-weight:   var(--text-preset-4-medium-weight);
+  font-size:     var(--text-preset-4-medium-size);
+  line-height:   var(--text-preset-4-medium-line-height);
+  letter-spacing:var(--text-preset-4-medium-letter-spacing);
+ 
+  border-radius: var(--spacing-100);
+  padding: 8px;
+}
+.card .card-tags .card-tag.light{
+  background-color: var(--neutral-100);
+  color: var(--neutral-600);
+}
+
+.card .card-tags .card-tag.dark{
+  background-color: var(--neutral-400);
+  color: var(--neutral-100);
+ 
+}
+
+.card-footer{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px ;
+    padding-bottom: 16px ;
+    border-top: 1px solid var(--neutral-400);
+}
+
+.card-footer .footer-tag{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-footer .footer-tag span{
+    font-family: var(--text-preset-5-family);
+  font-weight:   var(--text-preset-5-weight);
+  font-size:     var(--text-preset-5-size);
+  line-height:   var(--text-preset-5-line-height);
+  letter-spacing:var(--text-preset-5-letter-spacing);
+}
+ 
+.card-pin-indicator{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-pin-icon{
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.card-pin-icon:hover{
+    opacity: 1;
+    cursor: pointer;
+} 

@@ -1,0 +1,103 @@
+.search-box{
+    width:320px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+
+
+    font-family: var(--text-preset-4-medium-family);
+    font-weight: var(--text-preset-4-medium-weight);
+    font-size: var(--text-preset-4-medium-size);
+    line-height: var(--text-preset-4-medium-line-height);
+    letter-spacing: var(--text-preset-4-medium-letter-spacing);
+}
+
+.search-box.light{
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-300); 
+    color: var(--neutral-800);
+    border-radius: var(--spacing-100);    
+}   
+
+.search-box.dark{
+    background-color: var(--neutral-500);
+    border: 1px solid var(--teal-700); 
+    color: var(--neutral-100);
+    border-radius: var(--spacing-100);
+}
+
+.search-box img{
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;    /* az ikon ne fogja meg a kattintásokat */
+  fill: var(--color-500);      /* szín öröklődik a szövegből */
+ 
+}
+
+.search-box input{
+    width: 320px;
+    height:42px;;
+    padding-left: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.search-box.light input{
+    color: var(--neutral-800);
+    background-color: var(--neutral-100);
+    border: 1px solid var(--neutral-800);
+}
+
+.search-box.dark input{
+    color: var(--neutral-0);
+    background-color: var(--neutral-500);
+    border: 1px solid var(--neutral-0);
+}
+
+.search-box.light input:hover{
+    background-color: var(--neutral-400);
+    color: var(--neutral-800);
+}
+
+.search-box.dark input:hover{
+    background-color: var(--neutral-800);
+    color: var(--neutral-0);
+}
+
+.search-box input:focus{
+    border: 1px solid var(--teal-700);
+    outline: 1px solid var(--teal-800);
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .search-box{
+        width: 280px;
+    }
+    
+    .search-box input{
+        width: 280px;
+    }
+    
+    .search-box input:hover{
+        width: 280px;
+    }
+}
+
+@media (max-width: 767px) {
+    .search-box{
+        width: clamp(120px, 46vw, 170px);
+        padding: 0;
+    }
+    
+    .search-box input{
+        width: clamp(120px, 46vw, 170px);
+    }
+    
+    .search-box input:hover{
+        width: clamp(120px, 46vw, 170px);
+    }
+}

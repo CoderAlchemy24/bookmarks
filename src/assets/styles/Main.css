@@ -1,0 +1,107 @@
+.main{
+    width: 88vw;
+    height: auto;
+}
+
+
+.main.light,
+.bookmarks-header.light,
+.title.light, 
+.bookmarks-count.light {
+  background-color: var(--neutral-300);
+  color: var(--neutral-900);
+}
+
+.main.dark,
+.bookmarks-header.dark,
+.title.dark, 
+.bookmarks-count.dark {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+}
+
+.bookmarks-header{
+    padding: 40px 60px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    
+}
+
+.sort-by{
+  width:auto;
+  height: auto;
+  border-radius: var(--spacing-100);
+  padding: 6px 12px;
+}
+
+.sort-by.light{
+  background-color: var(--neutral-0);
+  color:var(--neutral-900);
+  border: 1px solid var(--neutral-400); 
+}
+
+.sort-by.dark{
+  background-color: var(--neutral-800);
+  color:var(--neutral-0);
+  border: 1px solid var(--teal-700); 
+}
+
+.bookmarks-count{
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 40px 160% 20px;
+}
+
+@media screen and (max-width : 900px) {
+  .main{
+    width: 100%;
+  }
+
+  .bookmarks-header{
+    padding: 40px 20px;
+    width:98%;
+  }
+  .bookmarks-count{
+    width: 98%;
+    padding: 0 50px 160% 20px;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .main{
+    width: 100%;
+  }
+
+  .bookmarks-header{
+    padding: 20px 5px;
+    width:100%;
+    font-size: 18px;
+  }
+
+  .sort-by{
+     width:110px;
+    height: auto;
+    border-radius: var(--spacing-100);
+    padding: 6px 6px;
+    font-size: 16px;
+}
+
+  .sort-icon{
+    position: relative;
+    top:2px;
+  }
+
+
+  .bookmarks-count{
+    width: 100%;
+    padding: 0 20px 160% 20px;
+  }
+}

@@ -1,0 +1,14 @@
+.logo-img{
+    width: 32px;
+    height: 32px;
+}
+
+.logo.dark{
+
+    color: var(--neutral-0);
+}
+
+.logo.light{
+    background-color: var(--neutral-0);
+    color: var(--neutral-800);
+}   

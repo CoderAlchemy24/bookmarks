@@ -1,0 +1,146 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 12px 16px;
+    width: 100%;
+    
+}
+
+.header.light{
+    background-color: var(--neutral-0);
+    
+}
+
+.header.dark{
+    background-color:var(--neutral-800);
+}   
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:12px;
+    position: relative;
+    padding-left:24px;
+    min-width: 0;
+   
+}
+
+.header-left > img{
+    position: relative;
+    top:-2px;
+    width: 48px;
+    height:48px;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:16px;
+    padding-right: 0;
+    flex-shrink: 0;
+   
+}
+
+
+.header-right .avatar{
+    width:52px;
+    height:52px;
+}
+
+.menu-profile-container{
+    position: absolute;
+    top:40px;
+    right: 40px;
+   
+}
+
+/* Mobile - show hamburger */
+@media screen and (max-width: 767px) {
+    .header{
+        padding: 12px 10px;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .header-left{
+        padding-left: 0px;
+        gap: 8px;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .header-right{
+        gap: 6px;
+        padding-right: 0;
+        margin-left: auto;
+    }
+
+    .hamburger{
+        display: block;
+    }   
+
+    .plus-icon{
+        display: block;
+    }
+    
+    .header-right > .button-primary{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .header{
+        padding: 16px 32px;
+        width: 100%;
+    }
+
+    .header-right{
+        padding-right: 32px;
+    }
+
+    .hamburger{
+        display:block;
+    }   
+
+    .plus-icon{
+        display: block;
+    }
+
+    .header-right > .button-primary{
+        display: none;
+    }
+   
+}
+
+
+/* Desktop - hide hamburger */
+@media screen and (min-width: 901px) {
+    .header{
+        width: 100%;
+        padding: 16px 32px;
+    }
+
+    .header-right{
+        padding-right: 96px;
+    }
+
+    .hamburger{
+        display:none;
+    }
+
+    .plus-icon{
+        display: none;
+    }
+    
+    .header-right > .button-primary{
+        display: block;
+    }
+}

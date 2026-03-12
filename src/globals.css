@@ -1,0 +1,208 @@
+/* ================================================================
+   GLOBAL CSS VARIABLES
+   Light mode és Dark mode támogatás
+   ================================================================ */
+
+/* ========== LIGHT MODE (alapértelmezett) ========== */
+
+
+.light{ 
+  --neutral-900: rgb(5,21,19);
+  --neutral-800: rgb(76,92,89);
+  --neutral-500: rgb(137, 148, 146);
+  --neutral-400: rgb(192, 207,204);
+  --neutral-300: rgb(221,233,231);
+  --neutral-100: rgb(232,240,239);
+  --neutral-0:   rgb(255,255,255);
+
+}
+
+/* ========== DARK MODE ========== */
+
+/* Kézi dark mód vezérléshez: ha az <html> elemnek van 'dark' osztálya */
+.dark {
+  --neutral-900: rgb(0,20,20);
+  --neutral-800: rgb(0,31,31);
+  --neutral-500: rgb(0, 46, 45);
+  --neutral-400: rgb(0,66,65);
+  --neutral-300: rgb(0, 71,70);
+  --neutral-100: rgb(177,185,185);
+  --neutral-0:   rgb(255,255,255);
+}
+
+/************************************************
+   OTHER COLOR VARIABLES
+   ************************************************/
+:root {
+     
+    --teal-700: rgb(1, 71,69);
+    --teal-800: rgb(1, 60, 59);
+    --red-600:  rgb(253,71,64);
+    --red-800:  rgb(203, 10, 4);
+  }
+
+/* ================================================================
+   FONT FACES
+   ================================================================ */
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope/static/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope/static/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope/static/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ================================================================
+   TEXT PRESETS
+   ================================================================ */
+:root {
+
+  --text-preset-1-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-1-weight: 700;
+  --text-preset-1-size: 24px;
+  --text-preset-1-line-height: 140%;
+  --text-preset-1-letter-spacing: 0;
+
+  --text-preset-2-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-2-weight: 700;
+  --text-preset-2-size: 20px;
+  --text-preset-2-line-height: 120%;
+  --text-preset-2-letter-spacing: 0;
+
+  --text-preset-2-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-2-weight: 600;
+  --text-preset-2-semibold-size: 20px;
+  --text-preset-2-semibold-line-height: 120%;
+  --text-preset-2-semibold-letter-spacing: 0;
+  
+  --text-preset-3-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-3-weight: 700;
+  --text-preset-3-size: 16px;
+  --text-preset-3-line-height: 140%;
+  --text-preset-3-letter-spacing: 0;
+
+  --text-preset-3-medium-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-3-medium-weight: 500;
+  --text-preset-3-medium-size: 16px;
+  --text-preset-3-medium-line-height: 130%;
+  --text-preset-3-medium-letter-spacing: 0;
+  
+  --text-preset-4-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-4-weight: 700;
+  --text-preset-4-size: 14px;
+  --text-preset-4-line-height: 140%;
+  --text-preset-4-letter-spacing: 0;
+  
+  --text-preset-4-medium-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-4-medium-weight: 500;
+  --text-preset-4-medium-size: 14px;
+  --text-preset-4-medium-line-height: 150%;
+  --text-preset-4-medium-letter-spacing: 0;
+  
+  --text-preset-5-medium-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-5-medium-weight: 500;
+  --text-preset-5-medium-size: 12px;
+  --text-preset-5-medium-line-height: 140%;
+  --text-preset-5-medium-letter-spacing: 0;
+
+  --text-preset-5-family: 'Manrope', 'Segoe UI', sans-serif;
+  --text-preset-5-weight: 500;
+  --text-preset-5-size: 12px;
+  --text-preset-5-line-height: 140%;
+  --text-preset-5-letter-spacing: 0;
+
+}
+/* ================================================================
+   SPACING VARIABLES
+    (pl. gap-ekhez, marginekhez, paddingekhez használható változók)
+   ================================================================ */
+  :root{
+    --spacing-000:0px;
+    --spacing-025:2px;
+    --spacing-050:4px;
+    --spacing-075:6px;
+    --spacing-100:8px;
+    --spacing-125:10px;
+    --spacing-150:12px;
+    --spacing-175:16px;
+    --spacing-200:16px;
+    --spacing-250:20px;
+    --spacing-300:24px;
+    --spacing-400:32px;
+    --spacing-500:40px;
+    --spacing-600:48px;
+    --spacing-800:64px;
+    --spacing-1200:80px;
+    --spacing-1200:96px;
+    --spacing-1400:112px;
+    --spacing-1600:128px;
+    --spacing-1800:140px;
+  }
+
+  /* ================================================================
+   RADIUS
+   ================================================================ */
+:root{
+    --radius-0: 0px;
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-20: 20px;
+    --radius-24: 24px;
+    --radius-full: 999px;
+}
+
+
+/* ================================================================
+   BASE STYLES
+   ================================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    font-family: var(--text-preset-1-family);
+    font-weight: var(--text-preset-1-weight);
+    font-size:   var(--text-preset-1-size);
+    line-height: var(--text-preset-1-line-height);
+    font-weight: var(--text-preset-1-weight);
+  
+  
+  }
+
+  body.light {
+    background-color: var(--neutral-300);
+    color: var(--neutral-900);
+  }   
+
+  body.dark {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+  } 
+
+
+

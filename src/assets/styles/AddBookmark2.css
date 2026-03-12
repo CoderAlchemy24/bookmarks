@@ -1,0 +1,102 @@
+.add-bookmark-overlay{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5); /* transparent with 50% opacity */
+    z-index: 50;
+}
+
+.add-bookmark{
+    width:570px;
+    max-height: 96vh;
+    overflow: auto;
+    border-radius: var(--spacing-175);
+    margin:6px 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.add-bookmark.light{
+    background-color: var(--neutral-0);
+    color: var(--neutral-800);
+    border: 1px solid var(--neutral-400);
+}
+
+.add-bookmark.dark{
+    background-color: var(--neutral-800);
+    color: var(--neutral-100);
+    border: 1px solid var(--neutral-600);
+}
+
+.add-bookmark .header{
+       width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px 5px;
+}
+
+.add-bookmark .header .x-icon{
+    position: relative;
+    right: -10px;
+    top:0px;
+    align-self: center;
+    width:24px;
+    height:24px;
+}
+
+.add-bookmark .header h2{
+    text-align: left;
+    margin: 0 ;
+    margin-left: 10px;
+    
+    font-family: var(--text-preset-1-family);
+    font-weight: var(--text-preset-1-weight);
+    font-size:  var(--text-preset-1-size);
+    line-height: var(--text-preset-1-line-height);
+    letter-spacing: var(--text-preset-1-letter-spacing);
+   
+}
+
+.add-bookmark.dark .header h2{
+    color: var(--neutral-0);
+}
+
+.add-bookmark.light .header h2{
+    color: var(--neutral-900);
+   
+}
+
+.add-bookmark p{ 
+    margin: 0;
+  margin-left: 12px;
+  font-family: var(--text-preset-4-medium);
+  font-weight: var(--text-preset-4-medium-weight);
+  font-size:  var(--text-preset-4-medium-size);
+  line-height: var(--text-preset-4-medium-line-height);
+  letter-spacing: var(--text-preset-4-medium-letter-spacing);
+}
+
+.add-bookmark .input-field,
+.add-bookmark .text-area-field{
+    width:100%;
+    margin: 0.75rem 16px 0.75rem 12px;
+}
+
+.add-bookmark .btns{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    align-items: center;
+    gap: var(--spacing-100);
+
+}
