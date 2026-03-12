@@ -66,7 +66,7 @@ export default function SideBar({ theme, mainView, setMainView, bookmarks = [], 
             <span className="bookmarks-label">Tags</span>
             {
                 uniqueSortedTags.map((tag) => (
-                    <div key={tag} className="bookmark-item" theme={theme}>
+                    <div key={tag}  theme={theme} className="bookmark-item">
                         
                         <CheckBox
                             id={`checkbox-${tag}`}
