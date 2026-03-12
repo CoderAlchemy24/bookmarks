@@ -40,7 +40,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 12px 5px;
+    padding-top: 12px;
 }
 
 .add-bookmark .header .x-icon{
