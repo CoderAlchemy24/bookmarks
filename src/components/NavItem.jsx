@@ -17,8 +17,7 @@ export default function NavItem({ label, theme, iconSrc, toggle=false, setTheme,
     <div
       className={`nav-item ${theme} ${toggle ? 'has-toggle' : ''}`}
       onClick={isInteractive ? onClick : undefined}
-      role={isInteractive ? 'button' : undefined}
-      tabIndex={isInteractive ? 0 : undefined}
+      
       onKeyDown={handleKeyDown}
     >
       {iconSrc && (
