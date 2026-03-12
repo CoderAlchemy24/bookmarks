@@ -34,7 +34,7 @@ export default function CheckBox({ id, tag, theme, checked = false, onChange }) 
 	}
 
 	return (
-		<label htmlFor={id}>
+		<label>
 		<input
 		    id={id}
             tag={tag}
