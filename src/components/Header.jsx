@@ -33,7 +33,7 @@ export default function Header({theme, setTheme, searchText = '', onSearchChange
              alt="hamburger" 
              className='hamburger' 
              onClick={onMenuClick}
-             style={{ cursor: 'pointer' }}
+             
            />
            <SearchBox
               theme={theme}

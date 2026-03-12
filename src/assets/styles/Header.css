@@ -37,6 +37,13 @@
     height:48px;
 }
 
+.hamburger{
+    width: 24px;
+    height: 24px;
+    display: none;
+    cursor: pointer;
+}
+
 .header-right{
     display: flex;
     flex-direction: row;
