@@ -10,9 +10,6 @@ This is a solution to the [Bookmark manager app challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -71,7 +68,7 @@ Users should be able to:
 
 ### AI Collaboration
 
-I used GitHub Copilot during this project. It helped me debugging, code-completing and solving issues.
+I used GitHub Copilot during this project.
 
 
 ## Author
